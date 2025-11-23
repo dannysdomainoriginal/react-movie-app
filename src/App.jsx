@@ -10,9 +10,7 @@ const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [debounceSearchTerm, setDebounceSearchTerm] = useState("");
 
-  useDebounce(() => {
-    setDebounceSearchTerm(searchTerm), 750, [searchTerm];
-  });
+  useDebounce(() => setDebounceSearchTerm(searchTerm), 750, [searchTerm]);
 
   // trending movies using zustand and localStorage persistence
   const trendingMovies = useTrendingStore((state) => state.trendingMovies);
