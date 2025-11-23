@@ -3,7 +3,7 @@
 My first official React project 😁  
 This is a project that uses the TMDB official API to deliver movies straight to users  
 It will deployed and available on GitHub Pages [here](https://dannysdomainoriginal.github.io/react-movie-app)
-<br>
+<br><br>
 
 ![React Movie App](./public/readme/home-img.png)
 
