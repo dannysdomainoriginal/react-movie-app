@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { persist } from "zustand/middleware";
+import { persist, createJSONStorage } from "zustand/middleware";
 
 const useTrendingStore = create(
   persist(
@@ -36,6 +36,7 @@ const useTrendingStore = create(
     {
       name: "ushhje-movies-app:trending-movies-list",
       partialize: (state) => ({ trendingMovies: state.trendingMovies }),
+      storage: createJSONStorage(() => sessionStorage)
     }
   )
 );
